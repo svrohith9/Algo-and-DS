@@ -34,6 +34,14 @@ public class ComparatorBasedPagination {
 		else
 			data = sorter.sortByRelevance(data, sortOrder);
 
+//
+//			data.sort((Item i1, Item i2) -> i1.getName().compareTo(i2.getName())); 
+//
+//			data.sort((Item i1, Item i2) -> Integer.compare(i1.getRelevance(), i2.getRelevance()));
+//
+//			data.sort((Item i1, Item i2) -> Integer.compare(i1.getPrice(), i2.getPrice())); 
+//		
+
 		int data_split = itemsPerPage * pageNumber;
 
 		data.stream().limit(itemsPerPage + data_split).skip(data_split).forEach(item -> {
