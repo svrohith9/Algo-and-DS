@@ -2,13 +2,11 @@ package com.algorithms.graphs;
 
 import java.util.Scanner;
 
-
-
 /**
  * @author svrohith9
  * @category DFS algorithms
  * 
- * LONGEST CONNECTED CHAIN
+ *           LONGEST CONNECTED CHAIN
  * 
  * 	 1 1 0 0 0
 	 0 1 0 0 1
@@ -16,7 +14,7 @@ import java.util.Scanner;
 	 0 0 0 0 0
 	 1 0 1 0 1
  * 
- *  output: 3
+ *           output: 3
  * 
  */
 public class AllConnectedNodes {
@@ -34,7 +32,7 @@ public class AllConnectedNodes {
 //		}
 
 //		System.out.println(getLongestChain(arr));
-
+		sc.close();
 	}
 
 	public static int getLongestChain(int arr[][]) {

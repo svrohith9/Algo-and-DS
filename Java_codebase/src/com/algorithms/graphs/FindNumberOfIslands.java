@@ -19,6 +19,7 @@ public class FindNumberOfIslands {
 		}
 
 		System.out.println(dfsConnections(mat));
+		sc.close();
 	}
 
 	private static int dfsConnections(int[][] mat) {

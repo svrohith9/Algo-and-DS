@@ -26,6 +26,7 @@ public class Day_11_2D_Arrays {
 			}
 		}
 		System.out.println(sum);
+		sc.close();
 	}
 
 }

@@ -18,19 +18,12 @@ public class DFS {
 		for (int i = 0; i < x; i++) {
 			for (int j = 0; j < y; j++) {
 				int path = sc.nextInt();
-				if (path == 1 && i !=j)
+				if (path == 1 && i != j)
 					n.addEdge(i, j);
 			}
 		}
-
-//      print to observe adj connected elements
-//		System.out.println(n.getAdjList(0));
-//		System.out.println(n.getAdjList(1));
-//		System.out.println(n.getAdjList(2));
-//		System.out.println(n.getAdjList(3));
-
-//		for (int i = 0; i < x; i++)
-			n.runDfs(0);
+		n.runDfs(0);
+		sc.close();
 
 	}
 
@@ -40,6 +33,7 @@ class Node {
 	private LinkedList<Integer> adjList[];
 	private boolean visited[];
 
+	@SuppressWarnings("unchecked")
 	public Node(int v) {
 		adjList = new LinkedList[v];
 		visited = new boolean[v];
